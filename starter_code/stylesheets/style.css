@@ -8,3 +8,87 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media (width <= 768px) {
+  nav {
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+  }
+  .nav-left > img {
+    width: 150px;
+  }
+  .nav-left {
+    display: flex;
+  }
+  .nav-left ul {
+    display: none;
+    list-style: none;
+  }
+  .nav-right img,
+  button {
+    width: 30px;
+    background-color: purple;
+    border: 0;
+    margin-right: 20px;
+  }
+
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: purple;
+  }
+  .landing div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 2rem;
+  }
+  .white-button {
+    background-color: white;
+    width: 90vw;
+    height: 60px;
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  .blue-button {
+    background-color: rgb(104, 104, 250);
+    width: 90vw;
+    height: 60px;
+    padding: 0;
+    border-radius: 5px;
+    position: relative;
+  }
+  .blue-button img {
+    height: 40%;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    border-radius: 2px;
+  }
+  h1 {
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    margin: 0 4rem;
+  }
+  .landing p {
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+  }
+}
